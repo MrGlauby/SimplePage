@@ -1,0 +1,110 @@
+/* Allgemeines Styling für die Navigation */
+.wrapper-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px ;
+    padding: 30px;
+  }
+  
+  .wrapper-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .wrapper-nav a:hover {
+    background-color: #445d7879;
+    transition: background 0.3s ease;
+  }
+  
+  .wrapper-nav .dropdown {
+    position: relative;
+  }
+  
+  .wrapper-nav .dropdown-toggle::after {
+    content: '▼';
+    margin-left: 5px;
+    color: #555;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrapper-nav .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+  
+
+  .wrapper-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  .wrapper-nav .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  .wrapper-nav .dropdown-menu a {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .wrapper-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile-Optimierung */
+  @media (max-width: 768px) {
+    .wrapper-nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .wrapper-nav .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+    }
+  
+    .wrapper-nav .dropdown-menu a {
+      padding: 10px;
+    }
+  
+  
+    li{
+      padding: 10px;
+    }
+  }
+  

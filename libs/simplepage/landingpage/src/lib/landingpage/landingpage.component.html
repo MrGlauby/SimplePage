@@ -1,0 +1,144 @@
+<div class="wrapper">
+    <div class="wrapper-container">
+      <lib-navfeature></lib-navfeature>
+  
+      <div class="content-wrapper">
+        <div>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+            delectus hic ullam accusamus provident optio ex, reprehenderit!
+          </h2>
+  
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            quaerat pariatur hic ipsum architecto cum iusto. Aspernatur quisquam
+            voluptas dignissimos, facere tenetur, molestias beatae maxime, eum est
+            iste quasi excepturi?
+          </p>
+  
+          <!-- <button [routerLink]="'/offerPage'">adipisicing eli!</button> -->
+  
+          <div>
+            <div class="cards-wrapper">
+              <div class="card-details">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates voluptas laudantium nulla perferendis rem? Explicabo
+                  magnam velit iusto incidunt ducimus nulla odio distinctio
+                  tempora, at dolores quidem, quae eligendi rerum voluptas
+                  cupiditate, quos expedita. Dolor dolorum necessitatibus sint non
+                  fugit culpa, dignissimos maiores error id quae?
+                </p>
+              </div>
+              <div class="card-details">
+                <h4>Lorem, ipsum.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  exercitationem voluptatem, ex, at rerum, amet nesciunt facilis
+                  aliquam porro laborum nihil officiis unde mollitia iste quae qui
+                  reiciendis deleniti? Velit.
+                </p>
+              </div>
+              <div class="card-details">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Doloremque delectus totam pariatur minus saepe tempora officiis
+                  aliquid eligendi provident dolor praesentium blanditiis minima,
+                  recusandae rerum sequi distinctio dolores quae? Nostrum,
+                  eveniet, blanditiis sit quam aliquid.
+                </p>
+              </div>
+            </div>
+            <div class="cards-wrapper">
+              <div class="card-details">
+                <h4>Lorem.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                  incidunt accusamus ad illo vel inventore quo dicta, reiciendis
+                  earum, repudiandae placeat consectetur distinctio autem nemo,
+                  sunt similique? Accusantium, porro! Voluptates minima qui unde
+                  dolor ullam! Aut provident corrupti a alias dolores sunt
+                  nesciunt nisi quis maxime pariatur, dolore laudantium neque?
+                </p>
+              </div>
+  
+              <div class="card-details">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  voluptatum exercitationem vero ipsam voluptatem aliquam nulla,
+                  facilis iure neque rem corporis soluta nostrum deleniti sit nisi
+                  eius alias eligendi. Dolore sint veritatis libero velit corporis
+                  aut illum dolorum tempora voluptate architecto. Nihil expedita
+                  molestias unde aliquam inventore quibusdam quisnecessitatibus
+                  veniam, distinctio minima magni cum exercitationem nam!
+                </p>
+              </div>
+  
+              <div class="card-details">
+                <h4>Lorem, ipsum.</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  nihil architecto cupiditate praesentium fuga necessitatibus
+                  obcaecati quidem, rem optio placeat?
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit!</h3>
+  
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
+            suscipit quas excepturi alias ipsum amet error nobis quos illo. Sint
+            impedit voluptatum commodi unde et iure quod officiis nemo
+            exercitationem, obcaecati quasi nobis alias aperiam dolor beatae eos
+            consectetur.
+          </p>
+  
+          <div>
+            <img class="picture-sp" src="assets/img/sp2.png" alt="Bild1" />
+          </div>
+  
+          <!-- <button [routerLink]="'/offerPage'">Totam necessitatibus!</button> -->
+  
+          <div>
+            <img class="picture-sp" src="assets/img/sp3.png" alt="Bild1" />
+          </div>
+  
+          <!-- <button [routerLink]="'/offerPage'">Totam necessitatibus!</button> -->
+  
+          <h3>Officiis assumenda!</h3>
+  
+          <h4>libero consequuntur</h4>
+  
+          <div>
+            <div>
+              <img class="picture-sp" src="assets/img/sp1.png" alt="Bild1" />
+            </div>
+            <p>inventore quos | amet consectetur adipisicing elit</p>
+          </div>
+  
+          <div>
+            <div *ngFor="let about of aboutMe">
+              <div (click)="toggleAnswer(about)">
+                <span>{{ about.question }}</span>
+                <button class="faq-toggle-btn">
+                  {{ about.isOpen ? 'v' : '>' }}
+                </button>
+              </div>
+              <div *ngIf="about.isOpen">
+                <p>{{ about.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- <footer-feature></footer-feature> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

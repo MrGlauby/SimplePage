@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@simplepage/landingpage": ["libs/simplepage/landingpage/src/index.ts"],
+      "@simplepage/navfeature": ["libs/simplepage/navfeature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
