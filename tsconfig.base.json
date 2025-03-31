@@ -15,8 +15,22 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@simplepage/aboutpage": ["libs/simplepage/aboutpage/src/index.ts"],
+      "@simplepage/blogpage": ["libs/simplepage/blogpage/src/index.ts"],
+      "@simplepage/contactpage": ["libs/simplepage/contactpage/src/index.ts"],
+      "@simplepage/datenschutzpage": [
+        "libs/simplepage/datenschutzpage/src/index.ts"
+      ],
+      "@simplepage/faqpage": ["libs/simplepage/faqpage/src/index.ts"],
+      "@simplepage/footerfeature": ["libs/simplepage/footer/src/index.ts"],
+      "@simplepage/impressumpage": [
+        "libs/simplepage/impressumpage/src/index.ts"
+      ],
       "@simplepage/landingpage": ["libs/simplepage/landingpage/src/index.ts"],
-      "@simplepage/navfeature": ["libs/simplepage/navfeature/src/index.ts"]
+      "@simplepage/maincontent": ["libs/simplepage/maincontent/src/index.ts"],
+      "@simplepage/navfeature": ["libs/simplepage/navfeature/src/index.ts"],
+      "@simplepage/newsletter": ["libs/simplepage/newsletter/src/index.ts"],
+      "@simplepage/offerpage": ["libs/simplepage/offerpage/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

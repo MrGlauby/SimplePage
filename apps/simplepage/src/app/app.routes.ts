@@ -8,46 +8,59 @@ export const appRoutes: Route[] = [
   },
 
   {
-    path: 'landingpage',loadComponent: () => import('@simplepage/landingpage').then((m) =>m.LandingpageComponent),
+    path: 'landingpage',
+    loadComponent: () =>
+      import('@simplepage/landingpage').then((m) => m.LandingpageComponent),
   },
-  
 
-//   {
-//     path: 'offerPage', loadComponent: () => import ('@simpel-page/offer').then((m) => m.OfferComponent),
-//   },
+  {
+    path: 'blogpage',
+    loadComponent: () =>
+      import('@simplepage/blogpage').then((m) => m.BlogpageComponent),
+  },
 
-//   {
-//     path: 'blogPage', loadComponent:() => import ('@simpel-page/blog').then((m) => m.BlogComponent),
-//   },
+  {
+    path: 'contactpage',
+    loadComponent: () =>
+      import('@simplepage/contactpage').then((m) => m.ContactpageComponent),
+  },
 
-//   {
-//     path: 'impressum', loadComponent:() => import ('@simpel-page/impressum').then((m) => m.ImpressumComponent),
-//   },
+  {
+    path: 'datenschutzpage',
+    loadComponent: () =>
+      import('@simplepage/datenschutzpage').then(
+        (m) => m.DatenschutzpageComponent
+      ),
+  },
 
-//   {
-//     path: 'contentPage', loadComponent:() => import ('@simpel-page/main-content').then((m) => m.MainContentComponent),
-//   },
-  
-//   {
-//     path: 'newsletterPage', loadComponent:() => import ('@simpel-page/newsletter').then((m) => m.NewsletterComponent),
-//   },
+  {
+    path: 'faqpage',
+    loadComponent: () =>
+      import('@simplepage/faqpage').then((m) => m.FaqpageComponent),
+  },
 
-//   {
-//     path: 'datenschutzPage', loadComponent:() => import ('@simpel-page/datenschutz').then((m) => m.DatenschutzComponent),
-//   },
+  {
+    path: 'impressum',
+    loadComponent: () =>
+      import('@simplepage/impressumpage').then((m) => m.ImpressumpageComponent),
+  },
 
+  {
+    path: 'newsletterpage',
+    loadComponent: () =>
+      import('@simplepage/newsletter').then((m) => m.NewsletterComponent),
+  },
 
+  {
+    path: 'offerpage',
+    loadComponent: () =>
+      import('@simplepage/offerpage').then((m) => m.OfferpageComponent),
+  },
 
-//   {
-//     path: 'faqPage', loadComponent:() => import ('@simpel-page/faq').then((m) => m.FaqComponent),
-//   },
-
-//   {
-//     path: 'aboutPage', loadComponent:() => import ('@simpel-page/about').then((m) => m.AboutComponent),
-//   },
-
-//   {
-//     path: 'contactPage', loadComponent:() => import ('@simpel-page/contact').then((m) => m.ContactComponent),
-//   },
+  {
+    path: 'aboutpage',
+    loadComponent: () =>
+      import('@simplepage/aboutpage').then((m) => m.AboutpageComponent),
+  },
 
 ];

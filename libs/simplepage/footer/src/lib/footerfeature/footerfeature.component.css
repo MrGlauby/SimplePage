@@ -1,0 +1,56 @@
+.wrapper-footer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: linear-gradient(90deg, #0480e0, #0251c0);
+    padding: 100px;
+    color: aliceblue;
+  }
+  
+  .header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .container-name-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .container-name {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .dtl-inp {
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.424);
+    background: none;
+  }
+  
+  .wrapper-checkbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+  }
+  
+  .detail-input-name {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .wrapper-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NavfeatureComponent} from '@simplepage/navfeature';
+import { FooterfeatureComponent } from '@simplepage/footerfeature';
 
 @Component({
   selector: 'lib-landingpage',
@@ -9,6 +10,7 @@ import {NavfeatureComponent} from '@simplepage/navfeature';
   imports: [
     CommonModule, 
     NavfeatureComponent,
+    FooterfeatureComponent,
   ],
 })
 export class LandingpageComponent {
