@@ -19,7 +19,18 @@
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/simplepage/public"
+            "input": "apps/simplepage/public",
+            "output": "/"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/simplepage/src/assets",
+            "output": "assets"
+          },
+          {
+            "input": "apps/simplepage/src/favicon.ico",
+            "output": "/",
+            "glob": "favicon.ico"
           }
         ],
         "styles": ["apps/simplepage/src/styles.scss"],

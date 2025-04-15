@@ -2,8 +2,45 @@
     <lib-navfeature></lib-navfeature>
   
   
-    <!-- <toggle-menu></toggle-menu> -->
-  
+<!-- Anderer HTML-Inhalt deiner Komponente kann hier stehen -->
+<h1>{{ pageTitle }}</h1> <!-- Beispiel für bestehenden Inhalt -->
+
+<!-- BEGINN: HTML für das Akkordeon -->
+<h2>Häufig gestellte Fragen</h2>
+
+<div class="accordion-container">
+  <!-- Gehe durch jedes Element im 'faqItems'-Array (aus der TS-Datei dieser Komponente) -->
+  <div *ngFor="let item of faqItems; let i = index" class="accordion-item">
+
+    <!-- Der klickbare Header -->
+    <div
+      class="accordion-header"
+      (click)="toggleItem(i)"
+      role="button"
+      tabindex="0"
+      [attr.aria-expanded]="currentlyOpenIndex === i"
+      [attr.aria-controls]="'faq-content-' + i"
+      (keydown.enter)="toggleItem(i)"
+      (keydown.space)="toggleItem(i)">
+
+      <span class="accordion-title">{{ item.title }}</span>
+      <!-- Zeige '+' oder '-' basierend auf dem offenen Zustand -->
+      <span class="accordion-icon">{{ currentlyOpenIndex === i ? '-' : '+' }}</span>
+    </div>
+
+    <!-- Der Inhalt, der nur angezeigt wird, wenn das Element offen ist -->
+    <div
+      *ngIf="currentlyOpenIndex === i"
+      class="accordion-content"
+      [id]="'faq-content-' + i"
+      role="region">
+       <!-- Verwende [innerHTML] nur, wenn du sicher bist, dass der Inhalt sicher ist! -->
+      <div [innerHTML]="item.content"></div>
+      <!-- Alternativ für reinen Text: <p>{{ item.content }}</p> -->
+    </div>
+
+  </div>
+</div>
     <footer></footer>
   </div>
   

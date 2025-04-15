@@ -1,9 +1,72 @@
-.warpper {
-    width: 60%;
-    align-items: center;
-    justify-self: center;
-    border: 1px solid black;
-    padding: 4%;
-    margin-top: 4%;
-  }
-  
+/* BEGINN: CSS für das Akkordeon */
+
+/* Container für das gesamte Akkordeon */
+.accordion-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Einzelnes Akkordeon-Element */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* Klickbarer Header */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none; /* Verhindert Textmarkierung beim Klicken */
+}
+
+.accordion-header:hover {
+  background-color: #eee;
+}
+
+/* Fokus-Styling (wichtig für Barrierefreiheit) */
+.accordion-header:focus {
+ outline: 2px solid blue;
+ outline-offset: 1px;
+}
+
+/* Titel im Header */
+.accordion-title {
+  margin-right: 10px;
+}
+
+/* Plus/Minus Icon */
+.accordion-icon {
+  font-size: 1.3em;
+  width: 20px; /* Feste Breite */
+  text-align: center;
+}
+
+/* Inhaltsbereich */
+.accordion-content {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #eee; /* Leichte Trennung vom Header */
+}
+
+/* Optional: Style für HTML-Inhalt */
+.accordion-content code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.accordion-content strong {
+  color: #333;
+}
+
+/* ENDE: CSS für das Akkordeon */

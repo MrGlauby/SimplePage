@@ -8,4 +8,17 @@ import { RouterLink } from '@angular/router';
   templateUrl: './footerfeature.component.html',
   styleUrl: './footerfeature.component.css',
 })
-export class FooterfeatureComponent {}
+export class FooterfeatureComponent {
+  
+  
+  
+  
+  public onSubmit() {
+    alert('Danke für deine Anmeldung! (Demo)');
+  }
+
+
+
+
+  
+}

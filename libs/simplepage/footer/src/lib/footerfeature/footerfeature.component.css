@@ -54,3 +54,10 @@
     flex-direction: column;
   }
   
+
+  .required::after {
+    content: " *"; /* Leerzeichen davor für etwas Abstand */
+    color: red;
+    /* Optional: Weitere Stile wie Schriftgröße oder Positionierung */
+    /* font-weight: bold; */ 
+  }
