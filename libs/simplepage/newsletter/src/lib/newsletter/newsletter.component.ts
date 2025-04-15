@@ -5,7 +5,7 @@ import { FooterfeatureComponent } from '@simplepage/footerfeature';
 
 @Component({
   selector: 'lib-newsletter',
-  imports: [CommonModule, NavfeatureComponent, FooterfeatureComponent],
+  imports: [CommonModule, NavfeatureComponent],
   templateUrl: './newsletter.component.html',
   styleUrl: './newsletter.component.css',
 })

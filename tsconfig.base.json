@@ -17,6 +17,7 @@
     "paths": {
       "@simplepage/aboutpage": ["libs/simplepage/aboutpage/src/index.ts"],
       "@simplepage/blogpage": ["libs/simplepage/blogpage/src/index.ts"],
+      "@simplepage/button": ["libs/ui/controls/button/src/index.ts"],
       "@simplepage/contactpage": ["libs/simplepage/contactpage/src/index.ts"],
       "@simplepage/datenschutzpage": [
         "libs/simplepage/datenschutzpage/src/index.ts"
